@@ -6,5 +6,8 @@
     "browser_action": {
         "default_icon": "images/icon.png",
         "default_popup": "index.html"
-    }
+    },
+    "permissions": [
+        "http://*/"
+    ]
 }
