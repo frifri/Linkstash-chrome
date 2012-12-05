@@ -1,0 +1,9 @@
+{
+    "name": "Linkstash",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "A weekly stash of http links.",
+    "browser_action": {
+        "default_icon": "images/icon.png"
+    }
+}
