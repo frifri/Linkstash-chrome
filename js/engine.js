@@ -33,6 +33,13 @@ Rest = {
         });
     },
 
+    put: function(jsonObject, strUrl, bAsync, rtrnVal) {
+        Rest._request(jsonObject, strUrl, "PUT", bAsync, function(data) {
+            rtrnVal(data);
+        });
+    },
+
+
     delete: function(jsonObject, strUrl, bAsync, rtrnVal) {
         Rest._request(jsonObject, strUrl, "DELETE", bAsync, function(data) {
             rtrnVal(data);
@@ -63,7 +70,7 @@ Rest = {
             error: function(jqXHR, textStatus, errorThrown) {
                 var errorObj = {
                     "request_error": {
-                        "nb": jqXHR.status,
+                        "status": jqXHR.status,
                         "text": jqXHR.statusText
                     }
                 };
