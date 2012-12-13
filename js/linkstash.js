@@ -21,7 +21,11 @@
 */
 
 Linkstash = {
-    addStash: function() {
-        
+    server_url: 'http://agile-fortress-2725.herokuapp.com/',
+
+    getStash: function(stash_id, callback) {
+        Rest.get(null, stash_id, false, function(data) {
+            callback(data);
+        });
     }
 };

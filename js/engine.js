@@ -55,7 +55,7 @@ Rest = {
             var strData = new Array();
 
         // Building the final url.
-        var finalStrUrl = localStorage['srv_pub_url'] + strUrl;
+        var finalStrUrl = Linkstash.server_url + strUrl;
         
         $.ajax({
             url: finalStrUrl,
