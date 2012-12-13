@@ -1,5 +1,6 @@
 /*
-* Copyright 2012 Francis Genet.
+* Linkstash request Lib.
+* Copyright (c) 2012 - 2013 Francis Genet. All rights reserved.
 *
 * Licensed to the Apache Software Foundation (ASF) under one
 * or more contributor license agreements.  See the NOTICE file
